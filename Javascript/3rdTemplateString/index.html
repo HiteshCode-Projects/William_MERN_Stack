@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OLD WAY - Hard To Read and Understand
+
+        const username = "John"
+        const age = 25
+
+        const greet = "Hello , my name is " + username + "and I am " + age + "Years Old"
+
+        console.log(greet)
+
+
+
+        //NEW Way - CLEAN AND READABLE
+        //Template String - Manage Text and Variable under backtick `  `
+        // Write ${VariableName}
+
+        const message = ` 
+        Dear ${username}
+        
+        Welcome To our store
+        you are ${age} years old
+        `
+
+        console.log(message)
+    </script>
+</body>
+</html>
