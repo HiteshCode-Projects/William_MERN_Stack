@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Operators will do action
+
+        const a = 10
+        const b = 3
+
+        //1.Arthmetic - + , -, / , * , %
+        console.log(a+b)  //Addition
+        console.log(a-b) 
+        console.log(a/b) 
+        console.log(a*b) 
+        console.log(a%b)
+        
+        // Increment and Decrement
+        let count = 5
+
+        count++  // Count value will be increased by 1 (++) now it become 6
+        count--  // decrease the value by 1 (--)   now it again its 5
+
+        count+=3   //Count is now 8(same as  count = count + 3)
+
+
+        //Comaprison Operator(return true/false)
+
+        // == Will Only Comapre Values on Left and Right Side
+        console.log(5 == 5)   //true
+        console.log(5 == "5")  //true - == will avoid data types
+
+        // === WIll Checks Both Value and Data Type As well
+        console.log(5 === "5") // false (number vs string)
+
+        //  != Not Equal To 
+        console.log(5 !=3 ) //true(Not Equal)
+
+        console.log(10>5)  //false
+        console.lo(10 <5)  //false
+        console.log(10 >= 10)  //true
+
+
+        //Logical Operators -
+        const age=25
+        const hasLicense = true
+
+        //AND - (&&) - both must be true
+
+        if(age>=18  && hasLicense){
+                 console.log("Can Drive")
+        }
+
+        // OR (||)  - atleast one must be true
+
+        if(age<18 || age > 65){
+            console.lo("Discounted Ticket")
+        }
+
+        // ! - flips true/false
+
+        console.lo(!true)  //false
+        console.log(!false)
+
+    </script>
+</body>
+</html>

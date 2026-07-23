@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Basic Condition - -if , if only gives the output when condition is TRUE
+
+        let age = 12;
+
+        if(age >= 18){
+          console.log("You are an adult")
+        }
+
+
+        //if else statment
+
+        let age2 = 15
+
+        if(age2 >= 18){
+            console.log("Can Vote")
+        }else{
+            console.log("Cannot Vote")
+        }
+
+        //else if - Multiple Condition
+        const score = 59
+
+        if(score >=90){
+            console.log("Grade A")
+        }
+        else if(score >= 75){
+            console.log("Garde B")
+        }
+        else if(score >= 60){
+            console.log("Grade C")
+        }
+        else{
+            console.log("Fail")
+        }
+
+
+        //Real Example - Login Check
+        const username = "william"
+        const password = "secret123"
+
+        if(username === "william"  && password === "secret123"){
+               console.log("Login Successful , Welcome")
+        }
+        else if(username != "william"){
+            console.log("User Not Found")
+        }else{
+            console.log("Wrong password")
+        }
+
+
+
+        //Ternary Operator
+        //Short Way in one single line Condition
+
+        //format condition ? True : False
+
+        const isLoggedin = true
+        const greeting = isLoggedin ? "Welcome Back" : "Please Login In"
+
+
+
+        //Swicth Statement - Many condition checks same variable
+
+        const day = "Friday"
+
+        switch(day){
+   
+            case "Monday":
+                console.log("Start of week, Coffe Time")
+                break;
+
+            case "Wednesday":
+                 console.log("Midweek Hump day")
+                 break;
+
+
+            case "Friday":
+                 console.log("Weekend Tom")
+                 break;
+
+
+            case "Saturday":
+            case "Sunday":     
+                 console.log("Weekend")
+                 break;
+
+           default:
+            console.log("Its weekday")
+
+        }
+
+    </script>
+</body>
+</html>
